@@ -1,7 +1,8 @@
 import React from 'react';
 import {Cards, Chart, CountryPicker} from './components'
+import styles from './App.module.css';
 
-import './App.css';
+
 
 class App extends React.Component{
   render(){
