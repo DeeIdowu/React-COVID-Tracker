@@ -7,7 +7,9 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        <h1> Welcome to COVID-19 Tracker</h1>
+        <Cards/>
+        <CountryPicker/>
+        <Chart/>
       </div>
     )
   }
