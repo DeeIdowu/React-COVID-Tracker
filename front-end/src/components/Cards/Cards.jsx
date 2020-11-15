@@ -3,7 +3,13 @@ import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 
 import styles from './Cards.module.css'
 
-const Cards = ({confirmed, recovered, deaths, lastUpdate}) =>{
+const Cards = ({data: {confirmed, recovered, deaths, lastUpdate} }) =>{
+    console.log(confirmed)
+    if(!confirmed){
+        return 'Loading...'
+    }
+    
+
     return(
         <div className={styles.container}>
           <Grid spacing={3} justify="center">
