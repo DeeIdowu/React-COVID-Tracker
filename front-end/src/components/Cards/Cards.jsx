@@ -1,11 +1,16 @@
 import React from 'react';
+import { Card, CardContent, Typography, Grid } from '@material-ui/core';
+
+import styles from './Cards.module.css'
 
 const Cards = (props) =>{
     console.log(props)
     return(
-        <h1>
-        Welcome to Card component
-        </h1>
+        <div className={styles.container}>
+          <Grid spacing={3}>
+
+          </Grid>
+        </div>
     )
 }
 
