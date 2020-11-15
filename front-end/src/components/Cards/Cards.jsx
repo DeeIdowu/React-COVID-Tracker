@@ -3,8 +3,7 @@ import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 
 import styles from './Cards.module.css'
 
-const Cards = (props) =>{
-    console.log(props)
+const Cards = ({confirmed, recovered, deaths, lastUpdate}) =>{
     return(
         <div className={styles.container}>
           <Grid spacing={3} justify="center">
@@ -14,7 +13,7 @@ const Cards = (props) =>{
                         Infected
                     </Typography>
                     <Typography variant="h5">
-                        REAL DATA
+                        {confirmed.value}
                     </Typography>
                     <Typography color="textSecondary">
                         REAL DATE
