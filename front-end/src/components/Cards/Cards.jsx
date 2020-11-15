@@ -27,7 +27,7 @@ const Cards = (props) =>{
             <Grid item component={Card}>
                 <CardContent>
                     <Typography color="textSecondary" gutterBottom>
-                        Infected
+                        Recovered
                     </Typography>
                     <Typography variant="h5">
                         REAL DATA
@@ -36,14 +36,14 @@ const Cards = (props) =>{
                         REAL DATE
                     </Typography>
                     <Typography variant="body2">
-                        No. of Active COVID-19 Cases:
+                        No. of Recoveries from COVID-19:
                     </Typography>
                 </CardContent>
             </Grid>
             <Grid item component={Card}>
                 <CardContent>
                     <Typography color="textSecondary" gutterBottom>
-                        Infected
+                        Deaths
                     </Typography>
                     <Typography variant="h5">
                         REAL DATA
@@ -52,7 +52,7 @@ const Cards = (props) =>{
                         REAL DATE
                     </Typography>
                     <Typography variant="body2">
-                        No. of Active COVID-19 Cases:
+                        No. of Deaths from COVID-19:
                     </Typography>
                 </CardContent>
             </Grid>
