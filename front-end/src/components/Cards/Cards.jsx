@@ -52,7 +52,7 @@ const Cards = (props) =>{
                         REAL DATE
                     </Typography>
                     <Typography variant="body2">
-                        No. of Deaths from COVID-19:
+                        No. of Deaths caused by COVID-19:
                     </Typography>
                 </CardContent>
             </Grid>
