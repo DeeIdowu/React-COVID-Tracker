@@ -20,7 +20,11 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate} }) =>{
                         Infected
                     </Typography>
                     <Typography variant="h5">
-                        <CountUp/>
+                        <CountUp
+                            start={0}
+                            end={confirmed.value}
+                            duration={2.5}
+                            seperator=","/>
                     </Typography>
                     <Typography color="textSecondary">
                         REAL DATE
