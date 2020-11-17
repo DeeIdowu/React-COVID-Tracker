@@ -27,7 +27,7 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate} }) =>{
                             seperator=","/>
                     </Typography>
                     <Typography color="textSecondary">
-                        REAL DATE
+                       {new Date(lastUpdate).toDateString()}
                     </Typography>
                     <Typography variant="body2">
                         No. of Active COVID-19 Cases:
