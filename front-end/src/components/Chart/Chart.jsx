@@ -43,10 +43,17 @@ const Chart = ({data, country}) =>{
         data.confirmed ? (
             <Bar
                 data={{
-
+                    labels: ['Infected', 'Recovered', 'Deaths'],
+                    datasets: [{
+                        label: 'People',
+                        backgroundColor: ['rgba(0, 0, 255, 0.5)',
+                         'rgba(255, 0, 0, 0.5',
+                         'rgba(255, 0, 0, 0.5)']
+                    }]
                 }}
                 options ={{
                     legend: {display: false},
+                    title: {display: true, text: `Current stste in ${country}`}
                 }}
              />
         ) : null
