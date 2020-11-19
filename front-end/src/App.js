@@ -28,7 +28,7 @@ handleCountryChange = async (country) =>{
 
     return(
       <div className={styles.container}>
-        <img src={CovidLogo} />
+        <img className={styles.image} src={CovidLogo} alt="COVID-19 Logo" />
         <Cards data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Chart data={data} country={country}/>
