@@ -49,7 +49,7 @@ const Chart = ({data: {confirmed, deaths, recovered}, country}) =>{
                         backgroundColor: ['rgba(0, 0, 255, 0.5)',
                          'rgba(255, 0, 0, 0.5',
                          'rgba(255, 0, 0, 0.5)'],
-                         data: [confirmed, recovered, deaths]
+                         data: [confirmed.value, recovered.value, deaths.value]
                     }]
                 }}
                 options ={{
@@ -64,7 +64,7 @@ const Chart = ({data: {confirmed, deaths, recovered}, country}) =>{
 
     return(
         <div className={styles.container}>
-            {lineChart}
+            {country ? barChart : lineChart}
         </div>
     )
 }
